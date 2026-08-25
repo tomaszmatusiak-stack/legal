@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas — Polityka prywatności</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 680px; margin: 0 auto; padding: 32px 20px; line-height: 1.7; color: #1a1a1a; }
+  h1 { font-size: 28px; } h2 { font-size: 20px; margin-top: 32px; }
+  footer { margin-top: 48px; font-size: 14px; color: #666; border-top: 1px solid #ddd; padding-top: 16px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111; color: #eee; }
+    footer { color: #999; border-color: #333; }
+    a { color: #7cc4ff; }
+  }
+</style>
+</head>
+<body>
+<h1>🧭 Atlas — Polityka prywatności</h1>
+<p><em>Obowiązuje od: 25 sierpnia 2026 r.</em></p>
+
+<h2>Najkrócej</h2>
+<p>Atlas to dziennik. Twoje wpisy <strong>są szyfrowane, zanim trafią na dysk</strong>, a dostęp do nich
+chroni Row Level Security — każdy widzi wyłącznie własne dane. Ani my, ani nikt inny nie czyta Twoich
+wpisów. Nie sprzedajemy danych, nie trenujemy na nich modeli, nie pokazujemy reklam.</p>
+
+<h2>Co przetwarzamy</h2>
+<ul>
+  <li><strong>Konto</strong> — adres e-mail albo identyfikator Apple, potrzebny, żeby wpisy wróciły
+      po zmianie telefonu. Podstawa: wykonanie umowy (art. 6 ust. 1 lit. b RODO).</li>
+  <li><strong>Treść wpisów</strong> — przechowywana w bazie w postaci zaszyfrowanej (AES przez pgcrypto).
+      Klucz szyfrujący jest po stronie serwera, poza tabelą z danymi.</li>
+  <li><strong>Zakupy</strong> — realizuje Apple. Nie otrzymujemy Twojego nazwiska, adresu ani danych karty.
+      Do przypisania zakupu do konta służy identyfikator transakcji.</li>
+</ul>
+
+<h2>Analiza przez AI</h2>
+<p>Do analizy Atlas wysyła treść wpisu do API Claude (Anthropic). Klucz API nigdy nie znajduje się
+w aplikacji, a <strong>Anthropic nie trenuje modeli na danych przesyłanych przez API</strong>.
+Wysyłamy wyłącznie to, co jest potrzebne do wygenerowania odpowiedzi.</p>
+
+<h2>Wpisy głosowe</h2>
+<p>Nagranie zamieniane jest na tekst <strong>na Twoim urządzeniu, w trybie offline</strong>.
+Samo nagranie nigdzie nie jest wysyłane ani zapisywane — dalej idzie tylko tekst.</p>
+
+<h2>Podmioty przetwarzające</h2>
+<ul>
+  <li><strong>Supabase</strong> — hosting bazy danych i uwierzytelnianie (serwery w Unii Europejskiej).</li>
+  <li><strong>Anthropic</strong> — model językowy generujący analizy wpisów.</li>
+  <li><strong>Apple</strong> — dystrybucja aplikacji i obsługa płatności.</li>
+</ul>
+
+<h2>Twoje prawa</h2>
+<p>Masz prawo dostępu do danych, sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia
+oraz sprzeciwu. W aplikacji znajdziesz <strong>pełny eksport danych</strong> i <strong>trwałe usunięcie
+konta</strong> — obie operacje wykonasz samodzielnie, bez kontaktu z nami. Przysługuje Ci też skarga
+do organu nadzorczego.</p>
+
+<h2>Zastrzeżenie</h2>
+<p>Atlas wspiera refleksję i wellbeing. <strong>Nie diagnozuje i nie zastępuje specjalisty.</strong>
+Jeśli przeżywasz kryzys, skontaktuj się z bliską osobą lub specjalistą — bezpłatny telefon wsparcia:
+<strong>116 123</strong>.</p>
+
+<h2>Zmiany</h2>
+<p>Każda przyszła wersja tego dokumentu pojawi się pod tym adresem z nową datą obowiązywania.</p>
+<footer>
+Administrator: <strong>Tomasz Matusiak</strong>, osoba fizyczna prowadząca działalność nierejestrowaną
+w rozumieniu art. 5 Prawa przedsiębiorców, ul. Przygraniczna 21A, 80-298 Czaple.
+Kontakt: <a href="mailto:tomasz.matusiak@post.pl">tomasz.matusiak@post.pl</a>.<br>
+Organ nadzorczy: Prezes Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa.
+</footer>
+</body>
+</html>
